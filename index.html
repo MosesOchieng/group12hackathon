@@ -27,6 +27,43 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+	<style>
+		.dropbtn {
+		  background-color: #04AA6D;
+		  color: white;
+		  width: 160px;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		}
+		
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		}
+		
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f1f1f1;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+		
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+		
+		.dropdown-content a:hover {background-color: #ddd;}
+		
+		.dropdown:hover .dropdown-content {display: block;}
+		
+		.dropdown:hover .dropbtn {background-color: #3e8e41;}
+		</style>
   </head>
   <body>
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -38,9 +75,22 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	        	
+	        	<li class="nav-item"><a href="Index.html" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="work.html" class="nav-link">Professional Work Experience</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+			  <li class="nav-item"><a href="work.html" class="nav-link">Professional Work Experience</a>
+				<div class="dropdown">
+					<button class="dropbtn">work With</button>
+					<div class="dropdown-content">
+					  <a href="#moses">Moses O. Opiyo</a>
+					  <a href="#miriam">Miriam M.</a>
+					  <a href="#reuben">Reuben K.</a>
+					  <a href="#univer">Univer Omoro</a>
+					  <a href="#kelvin">Kelvin Chui.</a>
+					</div>
+				  </div>
+				  
+			</li>
 	        </ul>
 	      </div>
 	    </div>
@@ -182,8 +232,8 @@
 	  							<div class="px-4 px-lg-4">
 	  								<div class="desc">
 		  								<div class="top">
-			  								<span class="subheading">Software Engineer</span>
-				  							<h2 class="mb-4"><a href="work.html">Reuben Kigae</a></h2>
+			  								<span class="subheading" id="reuben">Software Engineer</span>
+				  							<h2 class="mb-4"><a href="#">Reuben Kiage</a></h2>
 			  							</div>
 			  							<div class="absolute">
 				  							<p>We are able to design you website with CSS ,SCSS, figma and Javascript, HTML and HTML(Pug) .</p>
@@ -200,13 +250,13 @@
 
     	<div class="container-fluid px-0 portfolio-entry">
     		<div class="row no-gutters d-xl-flex justify-content-end text-wrapper">
-					<div class="one-half img js-fullheight" style="background-image: url('images/un.jpg');"></div>
+					<div class="one-half img js-fullheight" style="background-image: url('images/un.jpg');width:600px;"></div>
 					<div class="one-half half-text d-flex justify-content-end align-items-center ftco-animate">
 						<div class="text align-items-center d-flex">
               <div class="desc pt-5 pl-4 pr-4 pt-lg-0 pl-lg-5 pl-xl-0 pr-xl-0">
 								<div class="top">
-  								<span class="subheading">Software Engineer</span>
-	  							<h2 class="mb-4"><a href="work.html">Univer Omoro</a></h2>
+  								<span class="subheading"id="univer">Software Engineer</span>
+	  							<h2 class="mb-4"><a href="#">Univer Omoro</a></h2>
   							</div>
   							<div class="absolute">
 	  							<p>Building website designs in CSS  , a Front end engineer proficient in SCSS , HTML and HTML (PUG).Training at PLP as a Software Engineer.</p>
@@ -220,13 +270,13 @@
 
     	<div class="container-fluid px-0 portfolio-entry">
     		<div class="row no-gutters d-md-flex justify-content-start text-wrapper">
-					<div class="one-half img js-fullheight" style="background-image: url('images/kelvin.jpg');"></div>
+					<div class="one-half img js-fullheight" style="background-image: url('images/kelvin.jpg');width:700px;"></div>
 					<div class="one-half half-text d-flex justify-content-end align-items-center ftco-animate">
 						<div class="text-2 align-items-start d-flex">
               <div class="desc pt-5 pr-4 pl-4 pt-lg-0 pr-lg-5 pr-xl-0 pl-xl-0">
 								<div class="top">
-  								<span class="subheading">Software  Engineer</span>
-	  							<h2 class="mb-4"><a href="work.html">Kelvin Chui</a></h2>
+  								<span class="subheading" id="kelvin">Software  Engineer</span>
+	  							<h2 class="mb-4"><a href="#">Kelvin Chui</a></h2>
   							</div>
   							<div class="absolute">
 	  							<p>Software Engineer at PLP Africa proficient in Javascript , Css and HTML..</p>
@@ -240,13 +290,13 @@
 
     	<div class="container-fluid px-0 portfolio-entry">
     		<div class="row no-gutters d-md-flex justify-content-end text-wrapper">
-					<div class="one-half img js-fullheight" style="background-image: url('images/work-5.jpg');"></div>
+					<div class="one-half img js-fullheight" style="background-image: url('images/miriam.jpg');width:600px;"></div>
 					<div class="one-half half-text d-flex justify-content-end align-items-center ftco-animate">
 						<div class="text align-items-center d-flex">
               <div class="desc pt-5 pl-5 pr-5 pt-lg-0 pl-lg-5 pl-xl-0 pr-xl-0">
 								<div class="top">
-  								<span class="subheading">Software Engineer</span>
-	  							<h2 class="mb-4"><a href="work.html">Miriam Mukuhi</a></h2>
+  								<span id="miriam" class="subheading">Software Engineer</span>
+	  							<h2 class="mb-4"><a href="#">Miriam Mukuhi</a></h2>
   							</div>
   							<div class="absolute">
 	  							<p>Miriam is a Trained Software Engineer at Power Learning Project and is skilled in Css , Javascript Html and frameworks for website development.</p>
@@ -270,8 +320,8 @@
 	  							<div class="px-4 px-lg-4">
 	  								<div class="desc">
 		  								<div class="top">
-			  								<span class="subheading">Blockchain Devops , Software Engineer && Associate Android & Cloud Engineer</span>
-				  							<h2 class="mb-4"><a href="work.html">Moses O. Opiyo</a></h2>
+			  								<span class="subheading" id="moses">Blockchain Devops , Software Engineer && Associate Android & Cloud Engineer</span>
+				  							<h2 class="mb-4"><a href="#">Moses O. Opiyo</a></h2>
 			  							</div>
 			  							<div class="absolute">
 				  							<p>Certified Associate Cloud Engineer and Android with Google Africa ** Certified Blockchain Developer with Africa Blockchain Company ** Certified Full Stalk Developer with Emobilis Institute of Mobile Technology && Training Software Engineer Power Learning POint.Follow my work in https://github.com/MosesOchieng</p>
